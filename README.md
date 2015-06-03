@@ -12,6 +12,7 @@ Investigation of Selenium WebDriver with Java.
 
 
 # How to use WebDriver with Maven
+Reference : http://docs.seleniumhq.org/download/maven.jsp
 
 ## 1) Add the following dependency onto your `pom.xml`.
 	<dependencies>
