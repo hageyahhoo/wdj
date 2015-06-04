@@ -15,10 +15,10 @@ public class GoogleSearchPageObject {
 	private WebDriver driver;
 
 	@FindBy(how=How.ID, using="lst-ib")
-	WebElement keyword;
+	private WebElement keyword;
 
 	@FindBy(how=How.NAME, using="btnK")
-	WebElement search;
+	private WebElement search;
 
 
 	public GoogleSearchPageObject(WebDriver driver) {
