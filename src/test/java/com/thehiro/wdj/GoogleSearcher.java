@@ -16,9 +16,11 @@ public class GoogleSearcher {
 	 * 
 	 * @param args nothing special.
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		WebDriver driver = new FirefoxDriver();
 		GoogleSearchPageObject googleSearchPageObject = PageFactory.initElements(driver, GoogleSearchPageObject.class);
 		googleSearchPageObject.search("Ninja Slayer");
+		Thread.sleep(1000);
+		driver.quit();
 	}
 }
