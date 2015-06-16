@@ -30,3 +30,15 @@ Reference : http://docs.seleniumhq.org/download/maven.jsp
 The path of `M2 REPO` is `$YOUR_HOME/.m2/repository`.
 
 After that, you can use WebDriver on Eclipse with Maven.
+
+
+
+# How to use RemoteWebDriver
+
+## 1) Remote Server
+	java -jar selenium-server-standalone-2.46.0.jar
+	http://localhost:4444/wd/hub/static/resource/hub.html
+
+## 2) Selenium Grid
+	java -jar selenium-server-standalone-2.46.0.jar -role hub -port 1111
+	http://localhost:1111/
