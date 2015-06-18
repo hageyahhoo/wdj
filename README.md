@@ -11,6 +11,7 @@ Investigation of Selenium WebDriver with Java.
 |Maven    |3.3.3   |https://maven.apache.org/download.cgi|
 
 
+
 # How to use WebDriver with Maven
 Reference : http://docs.seleniumhq.org/download/maven.jsp
 
@@ -42,3 +43,30 @@ After that, you can use WebDriver on Eclipse with Maven.
 ## 2) Selenium Grid
 	java -jar selenium-server-standalone-2.46.0.jar -role hub -port 1111
 	http://localhost:1111/
+
+
+
+# How to use Vagrant
+Vagrantfile is on ~/repository/src/infra
+
+## Tools
+- VirtualBox
+- Vagrant
+- Chef (Chef Solo)
+
+## Commands of Vagrant
+	vagrant box add <box name> <box URL>
+	vagrant init <box name>
+	vagrant up
+	vagrant ssh
+	vagrant ssh-config
+	vagrant halt
+	vagrant destroy
+
+## How to install Chef-Solo
+- vagrant ssh
+- curl -L https://www.opscode.com/chef/install,sh | sudo bash
+- chef-solo -v
+- knife create cookbook
+
+
