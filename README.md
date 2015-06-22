@@ -53,6 +53,8 @@ Vagrantfile is on ~/repository/src/infra
 - VirtualBox
 - Vagrant
 - Chef (Chef Solo)
+- knife
+- knife-solo
 
 ## Commands of Vagrant
 	vagrant box add <box name> <box URL>
@@ -63,10 +65,20 @@ Vagrantfile is on ~/repository/src/infra
 	vagrant halt
 	vagrant destroy
 
-## How to install Chef-Solo
+## How to install & run Chef-Solo
 - vagrant ssh
 - curl -L https://www.opscode.com/chef/install,sh | sudo bash
 - chef-solo -v
-- knife create cookbook
+- knife create cookbook <recipe name> -o <output directory>
+- chef-solo -o <recipe name>
+  - Use /var/chef/cookbook as the repository.
+
+## How to run knife-solo
+- gem install knife-solo
+- gem install berkshelf
+- Restart window
+- knife solo init <box directory>
+- knife solo bootstrap <box alias or IP address>
+- knife create cookbook <recipe name> -o ./site-cookbooks
 
 
